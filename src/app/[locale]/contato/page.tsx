@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
-import { Mail, Phone, Clock, MapPin, MessageSquare, Users, Headphones, Handshake, Shield, Send, Linkedin, Instagram, AlertCircle } from 'lucide-react';
+import { Clock, MapPin, Users, Headphones, Handshake, Shield, Send, Linkedin, AlertCircle } from 'lucide-react';
 import BackgroundSquares from '@/app/components/ui/BackgroundSquares';
 
 export default function ContatoPage() {

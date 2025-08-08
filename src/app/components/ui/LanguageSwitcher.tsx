@@ -12,8 +12,21 @@ export default function LanguageSwitcher() {
   const pathname = usePathname();
   const t = useTranslations('languageSwitcher');
 
+  // Remove leading locale from a pathname (e.g., /en/abc -> /abc, /pt -> /)
+  const stripLocalePrefix = (path: string) => {
+    const cleaned = path.replace(/^\/(en|pt)(?=\/|$)/, '');
+    return cleaned === '' ? '/' : cleaned;
+  };
+
   const switchToLocale = (newLocale: string) => {
-    router.replace(pathname, { locale: newLocale });
+    // Use current URL parts from the browser when available to preserve query/hash
+    const currentPath = typeof window !== 'undefined' ? window.location.pathname : pathname;
+    const localeAgnosticPath = stripLocalePrefix(currentPath);
+    const search = typeof window !== 'undefined' ? window.location.search : '';
+    const hash = typeof window !== 'undefined' ? window.location.hash : '';
+    const target = `${localeAgnosticPath}${search}${hash}`;
+
+    router.replace(target, { locale: newLocale });
   };
 
   return (
