@@ -61,7 +61,7 @@ export default function ContatoPage() {
     setErrorMessage('');
     
     try {
-      const response = await fetch('/api/send-email', {
+      const response = await fetch('/api/send', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -136,7 +136,7 @@ export default function ContatoPage() {
                 {t('subtitle')}
               </motion.p>
 
-              {/* Contact Info Cards */}
+              {/* Contact Info Cards 
               <motion.div 
                 className="grid grid-cols-2 gap-4"
                 initial={{ opacity: 0, y: 20 }}
@@ -183,6 +183,8 @@ export default function ContatoPage() {
                   </div>
                 </div>
               </motion.div>
+              */}
+
             </motion.div>
 
             {/* Right Side - Form */}
@@ -409,6 +411,88 @@ export default function ContatoPage() {
         </div>
       </section>
 
+      {/* Our Offices Section */}
+      <section className="py-20 bg-horizontal">
+        <div className="container mx-auto px-4 md:px-6">
+          <motion.div 
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl md:text-5xl  title-gradient-hero mb-6">
+              {t('offices.title.part1')} <span className="no-gradient">{t('offices.title.part2')}</span>
+            </h2>
+            <p className="text-lg text-gradient-hero max-w-3xl mx-auto">
+              {t('offices.subtitle')}
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+            {/* Belo Horizonte */}
+            <motion.div
+              className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-[var(--color-primary)]/30 transition-colors"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0 * 0.1 }}
+              viewport={{ once: true }}
+            >
+              <div className="w-16 h-16 rounded-xl bg-[var(--color-primary)]/20 flex items-center justify-center mb-6">
+                <MapPin className="w-8 h-8 text-[var(--color-primary)]" />
+              </div>
+              <h3 className="text-xl font-semibold text-white mb-3">{t('offices.locations.beloHorizonte.title')}</h3>
+              <p className="text-white/80 leading-relaxed">{t('offices.locations.beloHorizonte.address')}</p>
+            </motion.div>
+
+            {/* São Paulo Office */}
+            <motion.div
+              className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-[var(--color-primary)]/30 transition-colors"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 1 * 0.1 }}
+              viewport={{ once: true }}
+            >
+              <div className="w-16 h-16 rounded-xl bg-[var(--color-primary)]/20 flex items-center justify-center mb-6">
+                <MapPin className="w-8 h-8 text-[var(--color-primary)]" />
+              </div>
+              <h3 className="text-xl font-semibold text-white mb-3">{t('offices.locations.saoPauloOffice.title')}</h3>
+              <p className="text-white/80 leading-relaxed">{t('offices.locations.saoPauloOffice.address')}</p>
+            </motion.div>
+
+            {/* São Paulo Meeting */}
+            <motion.div
+              className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-[var(--color-primary)]/30 transition-colors"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 2 * 0.1 }}
+              viewport={{ once: true }}
+            >
+              <div className="w-16 h-16 rounded-xl bg-[var(--color-primary)]/20 flex items-center justify-center mb-6">
+                <MapPin className="w-8 h-8 text-[var(--color-primary)]" />
+              </div>
+              <h3 className="text-xl font-semibold text-white mb-3">{t('offices.locations.saoPauloMeeting.title')}</h3>
+              <p className="text-white/80 leading-relaxed">{t('offices.locations.saoPauloMeeting.address')}</p>
+            </motion.div>
+
+            {/* Uruguay */}
+            <motion.div
+              className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-[var(--color-primary)]/30 transition-colors"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 3 * 0.1 }}
+              viewport={{ once: true }}
+            >
+              <div className="w-16 h-16 rounded-xl bg-[var(--color-primary)]/20 flex items-center justify-center mb-6">
+                <MapPin className="w-8 h-8 text-[var(--color-primary)]" />
+              </div>
+              <h3 className="text-xl font-semibold text-white mb-3">{t('offices.locations.uruguay.title')}</h3>
+              <p className="text-white/80 leading-relaxed">{t('offices.locations.uruguay.address')}</p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Social Media and Additional Info Section */}
       <section className="py-20 bg-horizontal">
         <div className="container mx-auto px-4 md:px-6">
@@ -428,20 +512,12 @@ export default function ContatoPage() {
 
               <div className="flex gap-4">
                 <a 
-                  href="https://linkedin.com/company/tamborine"
+                  href="https://www.linkedin.com/company/tamborine/?"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-xl bg-[var(--color-primary)]/20 flex items-center justify-center hover:bg-[var(--color-primary)]/30 transition-colors group"
                 >
                   <Linkedin className="w-6 h-6 text-[var(--color-primary)] group-hover:scale-110 transition-transform" />
-                </a>
-                <a 
-                  href="https://instagram.com/tamborine"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 rounded-xl bg-[var(--color-primary)]/20 flex items-center justify-center hover:bg-[var(--color-primary)]/30 transition-colors group"
-                >
-                  <Instagram className="w-6 h-6 text-[var(--color-primary)] group-hover:scale-110 transition-transform" />
                 </a>
               </div>
             </motion.div>

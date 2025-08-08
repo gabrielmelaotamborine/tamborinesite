@@ -383,6 +383,31 @@
       },
       "subtitle": "Stay updated with the latest news, financial market insights, and product updates."
     },
+    "offices": {
+      "title": {
+        "part1": "Our",
+        "part2": "Offices"
+      },
+      "subtitle": "Find us at our strategically located offices in Brazil and Uruguay.",
+      "locations": {
+        "beloHorizonte": {
+          "title": "Belo Horizonte",
+          "address": "Praça Rui Barbosa, 104 - Centro, Belo Horizonte - MG, 30160-000"
+        },
+        "saoPauloOffice": {
+          "title": "São Paulo - Office",
+          "address": "Alameda Vicente Pinzon, 54 - Vila Olímpia, São Paulo - SP, 04547-130"
+        },
+        "saoPauloMeeting": {
+          "title": "São Paulo - Meeting",
+          "address": "R. da Consolação, 2302 - Consolação, São Paulo - SP, 01301-000"
+        },
+        "uruguay": {
+          "title": "Uruguay",
+          "address": "Víctor Soliño 349, 11300 Montevideo, Departamento de Montevideo, Uruguay"
+        }
+      }
+    },
     "additionalInfo": {
       "title": "Additional Information",
       "businessHours": {

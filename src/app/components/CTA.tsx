@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 export default function CTA() {
   const t = useTranslations("cta");
@@ -18,9 +19,12 @@ export default function CTA() {
         <p className="text-gradient-hero text-base md:text-lg lg:text-xl text-center mb-6">
           {t("description")}
         </p>
-        <button className="button text-solid cursor-pointer flex items-center gap-2 px-6 py-3 font-medium">
-          {t("button")}
-        </button>
+
+        <Link 
+        className="button text-solid cursor-pointer flex items-center gap-2 px-6 py-3 font-medium"
+        href="/contato">
+        {t("button")}
+        </Link>
       </div>
     </section>
   );

@@ -196,7 +196,7 @@ export async function POST(request: NextRequest) {
 
     // Enviar email de confirmação para o usuário
     const confirmationResult = await resend.emails.send({
-      from: 'Tamborine <noreply@tamborine.com.br>',
+      from: 'Marcos <marcos-winicius13@hotmail.com>',
       to: [email],
       subject: '✅ Confirmação: Sua mensagem foi recebida - Tamborine',
       html: confirmationEmailHtml,

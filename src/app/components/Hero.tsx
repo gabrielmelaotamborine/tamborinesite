@@ -4,6 +4,7 @@ import { LogIn, Sparkle } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import BackgroundSquares from './ui/BackgroundSquares';
+import Link from 'next/link';
 
 const Hero = () => {
   const t = useTranslations('hero');
@@ -92,6 +93,9 @@ const Hero = () => {
         >
           {t('description')}
         </motion.p>
+<Link 
+href="/contato"
+>
 
         <motion.button 
           className="button gap-2 px-6 py-3"
@@ -113,6 +117,7 @@ const Hero = () => {
           </motion.div>
           {t('cta')}
         </motion.button>
+        </Link>
       </motion.div>
     </section>
   );
