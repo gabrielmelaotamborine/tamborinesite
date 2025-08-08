@@ -107,7 +107,7 @@ export async function POST(request: NextRequest) {
 
     // Enviar email de notificação interna
     const { data, error } = await resend.emails.send({
-      from: 'Tamborine Website <noreply@tamborine.com.br>',
+      from: 'onboarding@resend.dev',
       to: ['gabriel.melao@tamborine.com.br'],
       subject: `🔔 [Site] ${assunto} - ${nome}`,
       html: emailHtml,
@@ -196,7 +196,7 @@ export async function POST(request: NextRequest) {
 
     // Enviar email de confirmação para o usuário
     const confirmationResult = await resend.emails.send({
-      from: 'Marcos <marcos-winicius13@hotmail.com>',
+      from: 'onboarding@resend.dev',
       to: [email],
       subject: '✅ Confirmação: Sua mensagem foi recebida - Tamborine',
       html: confirmationEmailHtml,
