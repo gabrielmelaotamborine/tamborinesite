@@ -5,9 +5,12 @@ import CuboUruguayLogo from './ui/CuboUruguay';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { SocialIcon } from 'react-social-icons';
+import { menuItems } from '@/app/data/menuItems';
 
 export default function Footer() {
   const t = useTranslations();
+  const menuT = useTranslations('menu');
+  const products = menuItems.find(m => m.id === 'products');
   return (
     <footer className="bg-gradient-to-br from-[var(--color-dark-green)] via-[#A7E97F]/5 to-[var(--color-dark-green)] text-[#B2C2C9] pt-16 pb-8 px-4">
       <div className="container mx-auto px-4 ">
@@ -42,10 +45,13 @@ export default function Footer() {
             <div>
               <h4 className="text-white font-semibold mb-4">{t('footer.products')}</h4>
               <ul className="space-y-2">
-                <li><Link href="/products/product-1" className="hover:text-white">{t('footer.cardProcessor')}</Link></li>
-                <li><Link href="/products/product-2" className="hover:text-white">{t('footer.paymentGateway')}</Link></li>
-                <li><Link href="/products/product-3" className="hover:text-white">{t('footer.apis')}</Link></li>
-                <li><Link href="/products/product-3" className="hover:text-white">{t('footer.binSponsor')}</Link></li>
+                {products?.subItems?.map(sub => (
+                  <li key={sub.id}>
+                    <Link href={sub.href} className="hover:text-white">
+                      {menuT(sub.titleKey)}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>

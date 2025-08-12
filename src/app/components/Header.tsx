@@ -31,13 +31,24 @@ export default function Header() {
             <nav className="hidden lg:flex items-center space-x-8">
               {menuItems.map((item) => (
                 <div key={item.id} className="relative dropdown-group w-full">
-                  <Link
-                    href={item.href}
-                    className="flex items-center py-2 font-medium hover:text-[var(--color-primary)] transition-colors"
-                  >
-                    {menuT(item.titleKey)}
-                    {item.hasDropdown && <ChevronDown size={16} className="ml-1" />}
-                  </Link>
+                  {item.id === 'resources' ? (
+                    <span
+                      className="flex items-center py-2 font-medium text-white/80 cursor-default select-none"
+                      aria-haspopup={item.hasDropdown ? 'true' : undefined}
+                      aria-expanded={item.hasDropdown ? 'false' : undefined}
+                    >
+                      {menuT(item.titleKey)}
+                      {item.hasDropdown && <ChevronDown size={16} className="ml-1" />}
+                    </span>
+                  ) : (
+                    <Link
+                      href={item.href}
+                      className="flex items-center py-2 font-medium hover:text-[var(--color-primary)] transition-colors"
+                    >
+                      {menuT(item.titleKey)}
+                      {item.hasDropdown && <ChevronDown size={16} className="ml-1" />}
+                    </Link>
+                  )}
                   
                   {item.hasDropdown && item.subItems && (
                     <>

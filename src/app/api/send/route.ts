@@ -197,7 +197,7 @@ export async function POST(request: NextRequest) {
     // Enviar email de confirmação para o usuário
     const confirmationResult = await resend.emails.send({
       from: 'onboarding@resend.dev',
-      to: [email],
+      to: 'gabriel.melao@tamborine.com.br',
       subject: '✅ Confirmação: Sua mensagem foi recebida - Tamborine',
       html: confirmationEmailHtml,
     });

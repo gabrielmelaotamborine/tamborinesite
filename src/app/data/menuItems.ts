@@ -66,7 +66,8 @@ export const menuItems: MenuItem[] = [
   {
     id: "resources",
     titleKey: "resources.title",
-    href: "/resources",
+  // href removido pois não existe página dedicada de resources
+  href: "#",
     hasDropdown: true,
     subItems: [
       {

@@ -20,10 +20,6 @@ export const pathnames = {
     en: '/contact',
     pt: '/contato'
   },
-  '/resources': {
-    en: '/resources',
-    pt: '/recursos'
-  },
   '/help': {
     en: '/help',
     pt: '/ajuda'
