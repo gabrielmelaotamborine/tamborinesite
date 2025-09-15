@@ -58,7 +58,7 @@ export default function Header() {
                         <div className="container mx-auto px-4 py-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-y-2 md:gap-x-8 auto-rows-auto relative z-10">
                           {/* Information div on the right side */}
                           <div className="hidden lg:block lg:col-span-1 lg:col-start-4 lg:row-span-3 border-l border-solid pl-6 self-start" style={{ borderColor: 'var(--color-solid)' }}>
-                            <h3 className="font-medium mb-3 text-primary">{statsT('title')}</h3>
+                            <h3 className="text-lg font-medium bg-linear-to-r from-[#deffcb] to-white bg-clip-text text-transparent mb-3 ">{statsT('title')}</h3>
                             <div className='flex flex-col gap-4'>
                               <span className='text-gradient-custom'>
                                 <BadgeCheck className="inline mr-2 text-neutral" />
@@ -80,7 +80,7 @@ export default function Header() {
 
                           {/* Partners section */}
                           <div className="hidden lg:block lg:col-span-1 lg:col-start-5 lg:row-span-3 border-l border-solid pl-6 self-start" style={{ borderColor: 'var(--color-solid)' }}>
-                            <h3 className="font-medium mb-3 text-primary">Parceiros</h3>
+                            <h3 className="text-lg font-medium bg-linear-to-r from-[#deffcb] to-white bg-clip-text text-transparent mb-3">Parceiros</h3>
                             <div className='flex flex-col gap-4'>
                               <div className="flex items-center justify-center bg-white/5 rounded p-2" style={{height:77, width:164}}>
                                 <Inovabra style={{height:'46px', width:'113px', maxWidth:'100%', maxHeight:'46px'}} />

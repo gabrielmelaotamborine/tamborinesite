@@ -30,7 +30,7 @@ export default function CookieIcon({ show, onClick }: CookieIconProps) {
           <button
             onClick={onClick}
             title={t('tooltip')}
-            className="group w-12 h-12 bg-gradient-to-r from-[#a7e97f] to-[#7dd3fc] rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 flex items-center justify-center"
+            className="group w-12 h-12 bg-gradient-to-r from-[#a7e97f] to-[white] rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 flex items-center justify-center"
           >
             <Settings className="w-5 h-5 text-gray-900 group-hover:rotate-180 transition-transform duration-300" />
             

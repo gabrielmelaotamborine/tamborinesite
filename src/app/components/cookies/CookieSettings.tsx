@@ -116,7 +116,7 @@ export default function CookieSettings({
                   
                   return (
                     <div key={type.key} className="flex items-start gap-4">
-                      <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-r from-[#a7e97f] to-[#7dd3fc] rounded-full flex items-center justify-center">
+                      <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-r from-[#a7e97f] to-[white] rounded-full flex items-center justify-center">
                         <Icon className="w-5 h-5 text-gray-900" />
                       </div>
                       
@@ -132,7 +132,7 @@ export default function CookieSettings({
                             disabled={type.disabled}
                             className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#a7e97f] ${
                               isEnabled
-                                ? 'bg-gradient-to-r from-[#a7e97f] to-[#7dd3fc]'
+                                ? 'bg-gradient-to-r from-[#a7e97f] to-[white]'
                                 : 'bg-gray-200 dark:bg-gray-700'
                             } ${type.disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'}`}
                           >
@@ -166,7 +166,7 @@ export default function CookieSettings({
                     
                     <button
                       onClick={onAcceptAll}
-                      className="flex-1 sm:flex-none bg-gradient-to-r from-[#a7e97f] to-[#7dd3fc] text-gray-900 font-medium py-2 px-4 rounded-lg text-sm hover:shadow-lg transition-all duration-200 hover:scale-105"
+                      className="flex-1 items-center justify-center button font-medium py-2 px-4 rounded-lg text-sm hover:shadow-lg transition-all duration-200 hover:scale-105"
                     >
                       {t('acceptAll')}
                     </button>
@@ -174,7 +174,7 @@ export default function CookieSettings({
                   
                   <button
                     onClick={handleSave}
-                    className="bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-2 px-6 rounded-lg text-sm transition-all duration-200 hover:scale-105 sm:order-2"
+                    className="flex-1 items-center justify-center button font-medium py-2 px-4 rounded-lg text-sm hover:shadow-lg transition-all duration-200 hover:scale-105"
                   >
                     {t('save')}
                   </button>

@@ -52,7 +52,7 @@ export default function DesktopDropdown({
             <div className="container mx-auto px-4 py-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-y-2 md:gap-x-8 auto-rows-auto relative z-10">
               {/* Information div on the right side */}
               <div className="hidden lg:block lg:col-span-1 lg:col-start-4 lg:row-span-3 border-l border-solid pl-6 self-start" style={{ borderColor: 'var(--color-solid)' }}>
-                <h3 className="font-medium mb-3 text-primary">{statsT('title')}</h3>
+                <h3 className="text-lg font-medium bg-linear-to-r from-[#deffcb] to-white bg-clip-text text-transparent group-hover:text-[var(--color-primary)] transition-colors duration-200">{statsT('title')}</h3>
                 <div className='flex flex-col gap-4'>
                   <span className='text-gradient-custom'>
                     <BadgeCheck className="inline mr-2 text-neutral" />

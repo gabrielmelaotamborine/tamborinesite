@@ -18,6 +18,10 @@
         "binSponsor": {
           "title": "BIN Sponsor & Card Issuing",
           "description": "Complete solution for issuing credit, debit, multi-purpose, and prepaid cards"
+        },
+        "businessCreditCard": {
+          "title": "Business Credit Card",
+          "description": "Business card with high limit, exclusive cashback and instant approval"
         }
       }
     },
@@ -545,6 +549,119 @@
     },
     "icon": {
       "tooltip": "Cookie Settings"
+    }
+  },
+  "businessCreditCard": {
+    "metadata": {
+      "title": "Business Credit Card - Tamborine",
+      "description": "Business credit card with high limit, exclusive cashback and instant approval. Perfect for companies seeking convenience and benefits."
+    },
+    "hero": {
+      "newFeature": "New!",
+      "announcement": "Premium business card now available",
+      "title": {
+        "part1": "Business Credit",
+        "part2": "Card"
+      },
+      "description": "Tamborine's business credit card offers high limits, exclusive cashback and instant approval. Manage your company's finances with security and practicality.",
+      "cta": {
+        "primary": "Apply for Card",
+        "secondary": "View Benefits"
+      },
+      "stats": {
+        "limit": "$100K",
+        "limitLabel": "Available limit",
+        "cashback": "5%",
+        "cashbackLabel": "Cashback",
+        "approval": "2 min",
+        "approvalLabel": "Approval"
+      }
+    },
+    "features": {
+      "title": "Exclusive Features",
+      "subtitle": "Discover all the benefits and conveniences that Tamborine's business card offers for your company.",
+      "instantApproval": {
+        "title": "Instant Approval",
+        "description": "Get your card approved in up to 2 minutes with our advanced credit analysis technology."
+      },
+      "security": {
+        "title": "Maximum Security",
+        "description": "24/7 anti-fraud protection, real-time notifications and instant blocking via app."
+      },
+      "cashback": {
+        "title": "Smart Cashback",
+        "description": "Up to 5% cashback on business categories like fuel, lodging and dining."
+      },
+      "international": {
+        "title": "International Use",
+        "description": "Use your card anywhere in the world without excessive conversion fees."
+      },
+      "realTime": {
+        "title": "Real-Time Control",
+        "description": "Track all transactions and manage limits through our business app."
+      },
+      "exclusive": {
+        "title": "Exclusive Benefits",
+        "description": "Access to VIP lounges, travel insurance and 24-hour priority service."
+      },
+      "additionalInfo": {
+        "title": "Complete Integration with Our Services",
+        "description": "Your business card integrates seamlessly with our payment platform, offering total visibility of your financial operations in one place."
+      }
+    },
+    "benefits": {
+      "title": "Benefits for Your Company",
+      "subtitle": "Complete financial solutions that help your company grow and organize better.",
+      "expense": {
+        "title": "Expense Management",
+        "description": "Total control over business expenses with detailed reports and automatic categorization.",
+        "features": [
+          "Automated monthly reports",
+          "Intelligent expense categorization",
+          "Limit control per employee",
+          "Integration with accounting systems"
+        ]
+      },
+      "finance": {
+        "title": "Financial Facilities",
+        "description": "Access to quick credit and special conditions for Tamborine partner companies.",
+        "features": [
+          "Pre-approved limit up to $100,000",
+          "Interest-free installments in 12x",
+          "Receivables anticipation",
+          "Preferential rates for customers"
+        ]
+      },
+      "digital": {
+        "title": "Digital Experience",
+        "description": "Complete app for business management with advanced control and monitoring features.",
+        "features": [
+          "Complete financial dashboard",
+          "Customizable notifications",
+          "Instant block and unblock",
+          "24/7 chat support"
+        ]
+      },
+      "cta": {
+        "title": "Ready to Revolutionize Your Company's Finances?",
+        "description": "Join thousands of companies that already use Tamborine's business card to optimize their financial management.",
+        "button": "Apply for Card Now",
+        "support": "Specialized support available"
+      }
+    },
+    "cta": {
+      "title": "Start Today",
+      "description": "Apply for your business card and have access to all benefits in minutes. No bureaucracy, no complications.",
+      "trustIndicators": {
+        "customers": "Active companies",
+        "rating": "Average rating",
+        "security": "Security"
+      },
+      "buttons": {
+        "primary": "Apply for Card",
+        "secondary": "Talk to Specialist"
+      },
+      "additionalInfo": "* Approval subject to credit analysis. No annual fee in the first year."
     }
   }
 }

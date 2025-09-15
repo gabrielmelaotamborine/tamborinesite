@@ -6,7 +6,7 @@ import { CreditCard, Shield, Zap, Globe, BarChart3, Clock } from 'lucide-react';
 import BackgroundSquares from '@/app/components/ui/BackgroundSquares';
 import CTA from '@/app/components/CTA';
 import { useTranslations } from 'next-intl';
-import { Link } from '@/navigation';
+import Link from 'next/link';
 
 export default function ProcessadoraDeCartoesPage() {
   const t = useTranslations('cardProcessorPage');

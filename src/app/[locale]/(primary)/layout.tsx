@@ -4,7 +4,7 @@ import Header from "@/app/components/Header";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import Footer from "../components/Footer";
+import Footer from "../../components/Footer";
 import NextTopLoader from "nextjs-toploader";
 import { CookieConsent } from "@/app/components/cookies";
 

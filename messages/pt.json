@@ -18,6 +18,10 @@
         "binSponsor": {
           "title": "BIN Sponsor e Emissão de Cartões",
           "description": "Solução completa para emissão de cartões de crédito, débito, múltiplos e pré-pagos"
+        },
+        "businessCreditCard": {
+          "title": "Cartão de Crédito Empresarial",
+          "description": "Cartão empresarial com limite alto, cashback exclusivo e aprovação instantânea"
         }
       }
     },
@@ -545,6 +549,119 @@
     },
     "icon": {
       "tooltip": "Configurações de Cookies"
+    }
+  },
+  "businessCreditCard": {
+    "metadata": {
+      "title": "Cartão de Crédito Empresarial - Tamborine",
+      "description": "Cartão de crédito empresarial com limite alto, cashback exclusivo e aprovação instantânea. Ideal para empresas que buscam facilidade e benefícios."
+    },
+    "hero": {
+      "newFeature": "Novo!",
+      "announcement": "Cartão empresarial premium disponível",
+      "title": {
+        "part1": "Cartão de Crédito",
+        "part2": "Empresarial"
+      },
+      "description": "O cartão de crédito empresarial da Tamborine oferece limite alto, cashback exclusivo e aprovação instantânea. Gerencie as finanças da sua empresa com segurança e praticidade.",
+      "cta": {
+        "primary": "Solicitar Cartão",
+        "secondary": "Ver Benefícios"
+      },
+      "stats": {
+        "limit": "R$ 500K",
+        "limitLabel": "Limite disponível",
+        "cashback": "5%",
+        "cashbackLabel": "Cashback",
+        "approval": "2 min",
+        "approvalLabel": "Aprovação"
+      }
+    },
+    "features": {
+      "title": "Recursos Exclusivos",
+      "subtitle": "Descubra todos os benefícios e facilidades que o cartão empresarial da Tamborine oferece para sua empresa.",
+      "instantApproval": {
+        "title": "Aprovação Instantânea",
+        "description": "Receba a aprovação do seu cartão em até 2 minutos com nossa tecnologia avançada de análise de crédito."
+      },
+      "security": {
+        "title": "Segurança Máxima",
+        "description": "Proteção anti-fraude 24/7, notificações em tempo real e bloqueio instantâneo via app."
+      },
+      "cashback": {
+        "title": "Cashback Inteligente",
+        "description": "Até 5% de cashback em categorias empresariais como combustível, hospedagem e alimentação."
+      },
+      "international": {
+        "title": "Uso Internacional",
+        "description": "Use seu cartão em qualquer lugar do mundo sem taxas de conversão abusivas."
+      },
+      "realTime": {
+        "title": "Controle em Tempo Real",
+        "description": "Acompanhe todas as transações e gerencie limites através do nosso app empresarial."
+      },
+      "exclusive": {
+        "title": "Benefícios Exclusivos",
+        "description": "Acesso a salas VIP, seguros de viagem e atendimento prioritário 24 horas."
+      },
+      "additionalInfo": {
+        "title": "Integração Completa com Nossos Serviços",
+        "description": "Seu cartão empresarial se integra perfeitamente com nossa plataforma de pagamentos, oferecendo visibilidade total das suas operações financeiras em um só lugar."
+      }
+    },
+    "benefits": {
+      "title": "Benefícios para Sua Empresa",
+      "subtitle": "Soluções financeiras completas que ajudam sua empresa a crescer e se organizar melhor.",
+      "expense": {
+        "title": "Gestão de Despesas",
+        "description": "Controle total sobre os gastos empresariais com relatórios detalhados e categorização automática.",
+        "features": [
+          "Relatórios mensais automatizados",
+          "Categorização inteligente de gastos",
+          "Controle de limite por funcionário",
+          "Integração com sistemas contábeis"
+        ]
+      },
+      "finance": {
+        "title": "Facilidades Financeiras",
+        "description": "Acesso a crédito rápido e condições especiais para empresas parceiras da Tamborine.",
+        "features": [
+          "Limite pré-aprovado até R$ 500.000",
+          "Parcelamento sem juros em 12x",
+          "Antecipação de recebíveis",
+          "Taxas preferenciais para clientes"
+        ]
+      },
+      "digital": {
+        "title": "Experiência Digital",
+        "description": "App completo para gestão empresarial com recursos avançados de controle e monitoramento.",
+        "features": [
+          "Dashboard financeiro completo",
+          "Notificações personalizáveis",
+          "Bloqueio e desbloqueio instantâneo",
+          "Suporte via chat 24/7"
+        ]
+      },
+      "cta": {
+        "title": "Pronto para Revolucionar as Finanças da Sua Empresa?",
+        "description": "Junte-se a milhares de empresas que já utilizam o cartão empresarial da Tamborine para otimizar sua gestão financeira.",
+        "button": "Solicitar Cartão Agora",
+        "support": "Suporte especializado disponível"
+      }
+    },
+    "cta": {
+      "title": "Comece Hoje Mesmo",
+      "description": "Solicite seu cartão empresarial e tenha acesso a todos os benefícios em minutos. Sem burocracia, sem complicação.",
+      "trustIndicators": {
+        "customers": "Empresas ativas",
+        "rating": "Avaliação média",
+        "security": "Segurança"
+      },
+      "buttons": {
+        "primary": "Solicitar Cartão",
+        "secondary": "Falar com Especialista"
+      },
+      "additionalInfo": "* Aprovação sujeita à análise de crédito. Cartão sem anuidade no primeiro ano."
     }
   }
 }

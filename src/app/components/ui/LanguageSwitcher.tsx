@@ -26,7 +26,8 @@ export default function LanguageSwitcher() {
     const hash = typeof window !== 'undefined' ? window.location.hash : '';
     const target = `${localeAgnosticPath}${search}${hash}`;
 
-    router.replace(target, { locale: newLocale });
+    // Use type assertion for dynamic paths that may not be in the routing config
+    router.replace(target as "/" | "/business-credit-card", { locale: newLocale });
   };
 
   return (
